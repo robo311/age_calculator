@@ -14,7 +14,6 @@ function App() {
   const [resultDate, setResultDate] = useState(null)
   const [error, setError] = useState(false)
 
-
   const handleResult = () =>{
     const todaysDate = new Date()
     const todaysYear = todaysDate.getFullYear()
@@ -61,11 +60,11 @@ function App() {
 
 
   return (
-    <main className=' bg-white flex flex-col p-[20px] rounded-lg'>
+    <main className=' bg-white flex flex-col p-[30px] rounded-3xl rounded-br-[100px] sm:p-[50px] sm:w-[600px]'>
       <Inputs error={error} date={date} setDate={setDate}/>
       <div className='mt-[50px] mb-[50px]'>
         <hr className='relative top-[40px]' />
-        <button onClick={handleResult} className='hover:bg-[#141414] transition-colors duration-100 ease-in rounded-full bg-[#854dff] p-4 z-10 relative left-[40%]'>
+        <button onClick={handleResult} className='hover:bg-[#141414] transition-colors duration-100 ease-in rounded-full bg-[#854dff] p-4 z-10 relative left-[40%] sm:left-[86%]'>
           <img src={arrow} alt="arrow_icon" />
         </button>
       </div>

@@ -3,9 +3,11 @@ import React from 'react'
 function Result({resultDate}) {
   return (
     <div>
-        <h1 className=' text-[46px]'>{resultDate ? resultDate.year : "--"} years</h1>
-        <h1 className=' text-[46px]'>{resultDate ? resultDate.month : "--"} months</h1>
-        <h1 className=' text-[46px]'>{resultDate ? resultDate.day : "--"} days</h1>
+        
+          
+        <h1 className=' text-[50px] sm:text-[60px]'> <span className=' text-[#854dff]'>{resultDate ? resultDate.year : "--"}</span> years</h1>
+        <h1 className=' text-[50px] sm:text-[60px]'><span className=' text-[#854dff]'>{resultDate ? resultDate.month : "--"}</span> months</h1>
+        <h1 className=' text-[50px] sm:text-[60px]'><span className=' text-[#854dff]'>{resultDate ? resultDate.day : "--"}</span> days</h1>
     </div>
   )
 }
